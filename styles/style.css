@@ -1,0 +1,143 @@
+/* Resetando as margens, paddings e caixas de todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo as propriedades para o HTML e o corpo da página */
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+/* Estilizando o corpo da página */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3eae3;
+}
+
+/* Estilizando o main principal */
+.principal {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 1rem;
+  max-width: 600px;
+  max-height: 100%;
+
+  
+  
+}
+
+.container_imagem_principal{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.container_imagem_principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem 0rem 0rem 0.5rem ;
+}
+
+.container_texto_principal{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2.0rem 1.9rem;
+  border-radius: 0rem 0.8rem 0.8rem 0rem;
+  
+  gap: 1.3rem;
+  width: 100%;
+  height: 100%;
+}
+
+.container_texto_principal h2{
+  font-size: 0.75rem;
+  letter-spacing: 0.31rem;
+  font-family:Montserrat;
+  font-weight: 200;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.container_texto_principal h1{
+  font-family: 'Fraunces', serif;
+  line-height: 1.0em;
+}
+
+.container_texto_principal p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.878rem;
+  font-weight: 100;
+  line-height: 1.6em;
+}
+
+.preco_produto{
+  display: flex;
+  align-items: center;
+  
+}
+
+.preco_produto h1{
+  color: hsl(158, 36%, 37%);
+  margin: 0% 9% 0% 3%;
+}
+.preco_produto h2{
+  text-decoration: line-through;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem;
+}
+
+.container_texto_principal button{
+  width: 98%;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  height: 3.8em;
+  border-radius: 0.5em;
+  color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  
+}
+
+.imagem_mobile{
+  display: none;
+}
+
+.imagem_desktop{
+  display: block;
+}
+
+/* Estilizando para dispositivos com largura menor ou igual a 768px */
+@media screen and (max-width: 780px) {
+  .principal{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    grid-template-columns: 1fr;
+    max-height: 100%;
+  }
+  .imagem_mobile{
+    display: block;
+  }
+
+  .imagem_desktop{
+    display: none;
+  }
+
+}
