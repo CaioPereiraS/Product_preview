@@ -124,12 +124,6 @@ body {
     grid-template-columns: 1fr;
     max-height: 100%;
   }
-  .container_imagem_principal img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem 0.5rem 0rem 0rem ;
-  }
   .imagem_mobile{
     display: block;
     width: 100%;
