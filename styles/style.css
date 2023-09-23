@@ -32,10 +32,7 @@ body {
   border-radius: 1rem;
   margin: 1rem;
   max-width: 600px;
-  max-height: 100%;
-
-  
-  
+  max-height: 100%;  
 }
 
 .container_imagem_principal{
@@ -43,8 +40,11 @@ body {
   width: 100%;
   height: 100%;
 }
+.imagem_mobile{
+  display: none;
+}
 
-.container_imagem_principal img {
+.imagem_desktop{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -114,14 +114,6 @@ body {
   
 }
 
-.imagem_mobile{
-  display: none;
-}
-
-.imagem_desktop{
-  display: block;
-}
-
 /* Estilizando para dispositivos com largura menor ou igual a 768px */
 @media screen and (max-width: 780px) {
   .principal{
@@ -132,8 +124,18 @@ body {
     grid-template-columns: 1fr;
     max-height: 100%;
   }
+  .container_imagem_principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0rem 0rem ;
+  }
   .imagem_mobile{
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0rem 0rem ;
   }
 
   .imagem_desktop{
